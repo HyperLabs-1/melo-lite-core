@@ -72,6 +72,7 @@ kotlin {
                 implementation(projects.spotify)
                 implementation(projects.kotlinYtmusicScraper)
                 implementation(projects.kizzy)
+                implementation(projects.listenTogether)
 
                 implementation(projects.lastfm)
 

@@ -43,6 +43,8 @@ class ExoPlayerAdapter(
     // Maps shuffled position -> original playlist index
     private var shuffleOrder = mutableListOf<Int>()
 
+    override var crossfadeSuppressed: Boolean = false
+
     init {
         exoPlayer.addListener(exoPlayerListener)
     }

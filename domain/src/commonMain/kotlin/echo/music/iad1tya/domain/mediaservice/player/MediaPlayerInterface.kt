@@ -7,6 +7,7 @@ import echo.music.iad1tya.domain.data.player.GenericPlaybackParameters
  * Abstract interface for media player implementations
  */
 interface MediaPlayerInterface {
+    var crossfadeSuppressed: Boolean
     // Playback control
     fun play()
 

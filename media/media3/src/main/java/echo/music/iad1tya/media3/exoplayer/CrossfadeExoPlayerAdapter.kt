@@ -369,6 +369,8 @@ internal class CrossfadeExoPlayerAdapter(
     private var shuffleIndices = mutableListOf<Int>()
     private var shuffleOrder = mutableListOf<Int>()
 
+    override var crossfadeSuppressed: Boolean = false
+
     // Loading management
     private var currentLoadJob: Job? = null
 
