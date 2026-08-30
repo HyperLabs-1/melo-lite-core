@@ -1032,7 +1032,7 @@ internal class DataStoreManagerImpl(
 
     override val autoCheckForUpdates =
         settingsDataStore.data.map { preferences ->
-            preferences[AUTO_CHECK_FOR_UPDATES] ?: TRUE
+            preferences[AUTO_CHECK_FOR_UPDATES] ?: FALSE
         }
 
     override suspend fun setAutoCheckForUpdates(autoCheck: Boolean) {
@@ -1409,7 +1409,7 @@ internal class DataStoreManagerImpl(
     override val enableLiquidGlass: Flow<String>
         get() =
             settingsDataStore.data.map { preferences ->
-                preferences[LIQUID_GLASS] ?: FALSE
+                preferences[LIQUID_GLASS] ?: TRUE
             }
 
     override suspend fun setEnableLiquidGlass(enable: Boolean) {
